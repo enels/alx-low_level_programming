@@ -10,7 +10,5 @@ int main(void)
 {
 	puts("Programming is like building a multilingual puzzle");
 
-	fprintf(stderr, "No error\n");
-
 	return (0);
 }
