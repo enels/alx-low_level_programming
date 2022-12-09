@@ -1,8 +1,12 @@
-/* Desc: prints out a string of chars using puts */
-
 #include <stdio.h>
 
-int main (void)
+/**
+ * main -  helps to print out the required string
+ *
+ * Return: 0 is returned if it runs without errors
+ */
+
+int main(void)
 {
 	puts("Programming is like building a multilingual puzzle\n");
 
