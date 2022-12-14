@@ -1,1 +1,3 @@
-void print_alphabet(void);
+#include <unistd.h>
+#include "_putchar.h" 
+int _putchar(char);
