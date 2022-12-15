@@ -21,9 +21,6 @@ int print_sign(int n)
 		return ('-');
 	}
 
-	if (n == 0)
-	{
-		_putchar('0');
+	else
 		return ('0');
-	}
 }
