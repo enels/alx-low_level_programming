@@ -11,27 +11,28 @@
 void print_rev(char *s)
 {
 	int length_of_s = 0;
-	int start_index, end_index;
-	char c[80];
+	char c;
 
 	/* get the length of the string */
-	c[length_of_s] = *s;
-	while (c[length_of_s] != '\0')
+	c = *s;
+	while (c != '\0')
 	{
 		length_of_s++;
 		s++;
-		c[length_of_s] = *s;
+		c = *s;
 	}
 
-	/* get the end of the string index */
-	start_index = length_of_s - 1;
-	/* get the start of the str index */
-	end_index = 0;
-
-	while (start_index >= end_index)
+	s--;
+	c = *s;
+	while (length_of_s != 0)
 	{
-		_putchar(c[start_index]);
-		start_index--;
+		_putchar(c);
+		s--;
+		c = *s;
+		length_of_s--;
 	}
+
+	_putchar(c);
 	_putchar('\n');
+
 }
