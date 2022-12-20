@@ -19,7 +19,6 @@ void _puts(char *s)
 		s++;
 		c = *s;
 	}
-	
-	_putchar('\n');
 
+	_putchar('\n');
 }
