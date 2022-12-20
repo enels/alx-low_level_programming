@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * _puts - returns the length of a string
@@ -14,9 +15,11 @@ void _puts(char *s)
 	c = *s;
 	while (c != '\0')
 	{
+		_putchar(c);
 		s++;
 		c = *s;
-		_putchar(c);
 	}
+	
+	_putchar('\n');
 
 }
