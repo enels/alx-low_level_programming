@@ -11,10 +11,11 @@
 void print_rev(char *s)
 {
 	int length_of_s = 0;
-	char c;
+	char c, first_c;
 
 	/* get the length of the string */
 	c = *s;
+	first_c = c;
 	while (c != '\0')
 	{
 		length_of_s++;
@@ -22,17 +23,20 @@ void print_rev(char *s)
 		c = *s;
 	}
 
-	s--;
-	c = *s;
-	while (length_of_s != 0)
+	if (first_c != '\0')
 	{
-		_putchar(c);
 		s--;
 		c = *s;
-		length_of_s--;
+		while (length_of_s != 0)
+		{
+			_putchar(c);
+			s--;
+			c = *s;
+			length_of_s--;
+		}
 	}
 
-	_putchar(c);
+	/*_putchar(c);*/
 	_putchar('\n');
 
 }
