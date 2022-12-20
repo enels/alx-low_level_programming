@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * _strlen - returns the length of a string
+ * _puts - returns the length of a string
  * @s: string to find the length
  *
- * Return: string length
+ * Return: void
  */
 
-int _strlen(char *s)
+int _puts(char *s)
 {
 	char c;
 
@@ -19,5 +19,4 @@ int _strlen(char *s)
 		_putchar(c);
 	}
 
-	return (length);
 }
