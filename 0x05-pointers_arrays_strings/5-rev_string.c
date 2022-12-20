@@ -26,7 +26,7 @@ void rev_string(char *s)
 	mid_value = length_of_s / 2;
 	counter = 0;
 	s--;
-	while (counter <= mid_value)
+	while (counter <= mid_value - 1)
 	{
 		temp = *s;
 		*s = p[counter];
