@@ -2,7 +2,7 @@
 
 /**
  * _puts - returns the length of a string
- * @s: string to find the length
+ * @s: string to print out
  *
  * Return: void
  */
