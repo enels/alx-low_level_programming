@@ -6,7 +6,7 @@
  * @s: string argumeent to print the reverse
  *
  * Return: void
- */ 
+ */
 
 void print_rev(char *s)
 {
@@ -21,9 +21,11 @@ void print_rev(char *s)
 		length_of_s++;
 		s++;
 		c[length_of_s] = *s;
-	} 
+	}
 
+	/* get the end of the string index */
 	start_index = length_of_s - 1;
+	/* get the start of the str index */
 	end_index = 0;
 
 	while (start_index >= end_index)
@@ -31,6 +33,5 @@ void print_rev(char *s)
 		_putchar(c[start_index]);
 		start_index--;
 	}
-	
 	_putchar('\n');
 }
