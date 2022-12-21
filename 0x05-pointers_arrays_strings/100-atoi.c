@@ -14,6 +14,9 @@ int _atoi(char *s)
 	int index = 0, number = 0, initial_char_int_index = 0;
 	bool end = false, is_char_int = false;
 
+	if (s[0] == '\0')
+		return 0;
+
 	/* skips none character integers */
 	while (!(s[index] >= '0' && s[index] <= '9'))
 	{
