@@ -12,12 +12,19 @@
 void print_array(int *a, int n)
 {
 	int index;
+	int s_t = sizeof(a) / sizeof(*a - 1);
+	printf("%i\n", s_t);
 
-	for (index = 0; index < n; ++index)
+	if (n == 0 || n == -1)
+		printf("%i\n", a[0]);
+	else
 	{
-		if (index != n - 1)
-			printf("%d, ", a[index]);
-		else
-			printf("%d\n", a[index]);
+		for (index = 0; index <= n-1; ++index)
+		{
+			if (index != n - 1)
+				printf("%d, ", a[index]);
+			else
+				printf("%d\n", a[index]);
+		}
 	}
 }
