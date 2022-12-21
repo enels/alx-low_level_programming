@@ -48,10 +48,13 @@ int _atoi(char *s)
 	}
 
 	/* remove the trailing zero */
-	number /= 10;
+	if (number > 0)
+	{
+		number /= 10;
 
-	if (s[initial_char_int_index - 1] == '-' && s[index] == '\0')
-		number *= -1;
+		if (s[initial_char_int_index - 1] == '-' && s[index] == '\0')
+			number *= -1;
+	}
 
 	return (number);
 }
