@@ -12,8 +12,6 @@
 void print_array(int *a, int n)
 {
 	int index;
-	int s_t = sizeof(a) / sizeof(*a - 1);
-	printf("%i\n", s_t);
 
 	if (n == 0 || n == -1)
 		printf("%i\n", a[0]);
