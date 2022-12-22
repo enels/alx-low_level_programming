@@ -20,7 +20,7 @@ char *leet(char *str)
 		while (index < 5)
 		{
 			/* checks if it's equal to any of the character index */
-			if (*str == c_arr[index])
+			if (*str == c_arr[index] || *str == (c_arr[index] - 'a' + 'A'))
 			/* change the character to the equivalent string integer */
 				*str = i_arr[index];
 
