@@ -20,6 +20,9 @@ char *cap_string(char *str)
 		/* checks if the char is a non alphabetic char */
 		if (!(*str >= 'a' && *str <= 'z') && !(*str >= 'A' && *str <= 'Z'))
 		{
+			/* change tab chars to single space */
+			if (*str == '\t')
+				*str = ' ';
 			/* not inside a word */
 			in_word = false;
 		} 
