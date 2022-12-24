@@ -35,10 +35,10 @@ void print_number(int n)
 		new_n /= 10;
 		if (negative_n)
 		{
-			_putchar('-');	
+			_putchar('-');
 		}
 
-		while (new_n!= 0)
+		while (new_n != 0)
 		{
 			rem = new_n % 10;
 			_putchar('0' + rem);
