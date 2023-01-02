@@ -43,7 +43,7 @@ char *_strstr(char *haystack, char *needle)
 	/* word wasn't found in haystack */
 	if (*haystack == '\0' && !found)
 	{
-		return ((char*)NULL);
+		return ((char *)NULL);
 	}
 	return (haystack);
 }
