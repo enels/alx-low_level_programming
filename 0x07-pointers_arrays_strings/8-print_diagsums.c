@@ -10,7 +10,7 @@
  */
 
 void print_diagsums(int *a, int size)
-{ 
+{
 	int row = size, col = size;
 	int row_count = 0, col_count = 0;
 	/* set the previous column and previous row to the top right position */
@@ -34,13 +34,13 @@ void print_diagsums(int *a, int size)
 				prev_col_count = col_count;
 			}
 			/* at the top right corner of the matrix */
-			else if (row_count == 0 && col_count == size -1)
-			{ 
+			else if (row_count == 0 && col_count == size - 1)
+			{
 				diagsum2 += *a;
 			}
 			a++;
 			col_count++;
-		} 
+		}
 		row_count++;
 	}
 
