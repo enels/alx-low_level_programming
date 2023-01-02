@@ -7,7 +7,7 @@
  * @accept: string to search for
  *
  * Return: pointer to the start of bytes in s to the end of s
- */ 
+ */
 
 char *_strpbrk(char *s, char *accept)
 {
@@ -30,5 +30,5 @@ char *_strpbrk(char *s, char *accept)
 		s++;
 	}
 	s--;
-	return s; 
+	return (s);
 }
