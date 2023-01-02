@@ -11,14 +11,12 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int char_count = 0;
+	int char_count = 0, max_pos = 0;
 	char *s_ptr = s;
 	bool found = false;
-	int max_pos = 1;
 
 	while (*accept != '\0')
 	{
-		/* alway sets the string pointer to the beginning */
 		s = s_ptr;
 
 		/* character count of s in each character of accept to check */
@@ -37,18 +35,9 @@ unsigned int _strspn(char *s, char *accept)
 				found = true;
 			}
 			/* increment the character count */
-			char_count++;
-
-			/* move pointer to next char */
-			s++;
+			char_count++, s++;
 		}
-
-		/* reset it to false for search of another char */
-		found = false;
-
-		/* move pointer to next char of word to check */
-		accept++;
-
+		found = false, accept++;
 	}
 
 	return (max_pos);
