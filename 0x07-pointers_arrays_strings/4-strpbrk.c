@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdbool.h>
+#include <stddef.h>
 
 /**
  * _strpbrk - searches a string for any sets of bytes
@@ -28,6 +29,10 @@ char *_strpbrk(char *s, char *accept)
 		}
 
 		s++;
+	}
+	if (*s == '\0' && !found)
+	{
+		return ((char *)NULL);
 	}
 	s--;
 	return (s);
