@@ -40,5 +40,10 @@ char *_strstr(char *haystack, char *needle)
 		haystack++;
 	}
 
+	/* word wasn't found in haystack */
+	if (*haystack == '\0' && !found)
+	{
+		return ((char*)NULL);
+	}
 	return (haystack);
 }
