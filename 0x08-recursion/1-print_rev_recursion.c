@@ -10,26 +10,13 @@
 void _print_rev_recursion(char *s)
 {
 	char first_char = s[0];
-	static int len = 1;
-
-	if (len == 1)
+	if (*s != '\0')
 	{
-		while (*s != '\0')
-		{
-			s++;
-			len++;
-		}
+		_print_rev_recursion(++s);
+		_putchar(*s); 
 	}
-
-	s--;
 	if (*s == first_char)
 	{
-		_putchar(*s);
-		return;
-	}
-	else
-	{
-		_putchar(*s);
-		_print_rev_recursion(s);
+		_putchar('\n');
 	}
 }
