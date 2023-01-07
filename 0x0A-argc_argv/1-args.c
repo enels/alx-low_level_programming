@@ -8,15 +8,17 @@
  * Return: 0 if success
  */
 
-int main (int argc, char **argv)
+int main(int argc, char **argv)
 {
 	if (argv[0])
 	{
-		/*while (count < argc)
-		{
-			printf("%s ", argv[count]);
-			count++;
-		}*/
+		/*
+		 *while (count < argc)
+		 *{
+	     *	printf("%s ", argv[count]);
+		 *	count++;
+		 *}
+		 */
 
 		printf("%d\n", argc - 1);
 	}
