@@ -33,7 +33,7 @@ int main(int argc, char **argv)
 		}
 		/* test its sign */
 		if (num > 0)
-		{ 
+		{
 			result += num;
 		}
 		--argc;
