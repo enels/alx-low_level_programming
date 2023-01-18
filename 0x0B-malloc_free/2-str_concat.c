@@ -7,7 +7,7 @@
  * @s2: str 2
  *
  * Return: concatenated str
- */ 
+ */
 char *str_concat(char *s1, char *s2)
 {
 	char *new_str;
@@ -16,15 +16,13 @@ char *str_concat(char *s1, char *s2)
 
 	s1_len = strlen(s1);
 	s2_len = strlen(s2);
-
 	total_s1_s2_len = s1_len + s2_len;
 	if (total_s1_s2_len == 0)
 	{
 		return ("");
 	}
-
 	total_s1_s2_len++; /* for null string */
-	new_str = malloc(sizeof(char) * total_s1_s2_len); 
+	new_str = malloc(sizeof(char) * total_s1_s2_len);
 	if (new_str != NULL)
 	{
 		while (*s1 != '\0')
