@@ -14,22 +14,28 @@ char *_strdup(char *str)
 	char *new_str_loc;
 	int index;
 
-	if (str == NULL)
-	{
-		return (NULL);
-	}
-	else if (*str == '\0')
-	{
-		return ("");
-	}
-
 	while (*str != '\0')
 	{
 		str_size++;
 		str++;
 	}
 
+	if (str_size == 0)
+	{
+		return ("");
+	}
+
+	/* space for null char */
+	str_size++;
+
+	/* allocate memory */
 	new_str_loc = malloc(sizeof(char) * str_size);
+
+	/* check for mem alloc error */
+	if (new_str_loc == NULL)
+	{
+		return (NULL);
+	}
 
 	for (index = 0; index <= str_size; index++)
 	{
