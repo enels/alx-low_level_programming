@@ -18,12 +18,14 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
 	while (*str != '\0')
 	{
 		str_size++;
 		str++;
 	}
+
+	/* space for null char */
+	str_size++;
 
 	if (str_size == 0)
 	{
