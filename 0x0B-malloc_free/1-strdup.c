@@ -12,6 +12,7 @@ char *_strdup(char *str)
 	int str_size = 0;
 	char *str_ptr = str;
 	char *new_str_loc;
+	int index;
 
 	while (*str != '\0')
 	{
@@ -26,7 +27,7 @@ char *_strdup(char *str)
 
 	new_str_loc = malloc(sizeof(char) * str_size);
 
-	for (int index; index <= str_size; index++)
+	for (index = 0; index <= str_size; index++)
 	{
 		new_str_loc[index] = *str_ptr;
 		str_ptr++;
