@@ -14,15 +14,19 @@ char *_strdup(char *str)
 	char *new_str_loc;
 	int index;
 
+	if (*str == NULL)
+	{
+		return (NULL);
+	}
+	else if (*str == '\0')
+	{
+		return ("");
+	}
+
 	while (*str != '\0')
 	{
 		str_size++;
 		str++;
-	}
-
-	if (str_size == 0)
-	{
-		return (NULL);
 	}
 
 	new_str_loc = malloc(sizeof(char) * str_size);
