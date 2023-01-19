@@ -11,6 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int *arr = malloc(sizeof(unsigned int));
+
 	arr = realloc(arr, nmemb * size);
 
 	if (arr == NULL || nmemb == 0 || size == 0)
