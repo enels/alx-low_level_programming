@@ -17,5 +17,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return ((void *)NULL);
 	}
 
-	return arr;
+	return (arr);
 }
