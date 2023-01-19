@@ -30,7 +30,7 @@ int **alloc_grid(int width, int height)
 	}
 	else
 	{
-		return (int **)NULL;
+		return ((int **)NULL);
 	}
 
 	/* fill the array with values */
