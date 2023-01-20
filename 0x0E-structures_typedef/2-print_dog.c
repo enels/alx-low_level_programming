@@ -10,6 +10,11 @@
 
 void print_dog(struct dog *d)
 {
+	if (d == (struct dog *)NULL)
+	{
+		;
+	}
+
 	if (d->name != (char *)NULL)
 	{
 		printf("Name: %s\n", d->name);
