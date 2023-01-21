@@ -20,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(args, char *); /* assign the value of the arguments */
 		if (i == (n - 1))
-		{ 
+		{
 			printf("%s", str); /* last string */
 		}
 		else
