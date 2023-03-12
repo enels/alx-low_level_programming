@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints the numbers 1-100, followed by a new line. Multiples of
+ * main - prints the numbers 1-100, followed by a new line. Multiples of
  * 3 print Fizz and multiples of 5 print Buzz. For numbers that are multiples
  * of both print FizzBuzz
  *
- * Return: nothing
+ * Return: always 0
  */
 
-void fizz_buzz(void)
+int main(void)
 {
 	int count;
 
@@ -33,4 +33,6 @@ void fizz_buzz(void)
 	}
 
 	printf("\n");
+
+	return (0);
 }
