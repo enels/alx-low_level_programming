@@ -1,6 +1,6 @@
 /**
  * _isupper - checks for uppercase character
- * @c
+ * @c: character to check
  *
  * Return: 1 if upper and 0 if lower
  */
