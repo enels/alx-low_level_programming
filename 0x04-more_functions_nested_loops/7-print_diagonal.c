@@ -12,6 +12,11 @@ void print_diagonal(int n)
 	int upper_count; /* number of lines to form the diagonal */
 	int inner_count; /* number of char per line encountered */
 
+	if (n <= 0)
+	{
+		_putchar('\n');
+	}
+
 	for (upper_count = 0; upper_count < n; upper_count++)
 	{
 		for (inner_count = 0; inner_count <= upper_count; inner_count++)
